@@ -1,0 +1,58 @@
+*,
+*::after
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/background-space.jpg);
+    font-size: 20px;
+    box-sizing: border-box;
+    color:azure;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img-flex {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.row{
+    display: flex;
+}
+
+.columna-flex{
+    flex: 50%;
+}
+.tabla,
+.tabla th,
+.tabla td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.tabla {
+    max-width: 800px;
+    width: 100%; 
+}
+.tabla th {
+    color: black;
+    background-color:rgb(78, 207, 247);
+    padding: 10px;
+}
+.tabla td {
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla tbody tr:nth-child(odd) {
+    background-color: rgb(168, 17, 182);
+}
+.tabla tbody tr:nth-child(even) {
+    background-color: rgb(106, 24, 153);
+}

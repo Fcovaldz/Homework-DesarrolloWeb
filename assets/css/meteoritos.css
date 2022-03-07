@@ -1,0 +1,71 @@
+/* Objetos voladores */
+.obj-volador{
+    border-radius: 50%;
+    /* background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red); */
+    
+    opacity: 0;
+    position:fixed;
+    bottom: -100; 
+    animation: objs 1s alternate-reverse linear infinite ;
+    
+    /*
+    */
+}
+.obj-volador-1{
+    border-radius: 50%;
+    /* background: radial-gradient(circle closest-side,white 5%, #F2A516 80%,red); */
+    
+    opacity: 0;
+    position:fixed;
+    bottom: -100; 
+    animation: objs 2s linear infinite ;
+    
+    /*
+    */
+}
+.obj-volador:nth-child(1){
+    width: 10px;
+    height: 10px;
+    left: 15%;
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+.obj-volador-1:nth-child(2){
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.obj-volador-1:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 5%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+.obj-volador:nth-child(4){
+    width: 20px;
+    height: 20px;
+    right: 10%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+@keyframes objs{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+    
+}
